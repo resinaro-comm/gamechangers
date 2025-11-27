@@ -88,22 +88,8 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Right: Alveriano credit */}
-          <div className="flex flex-col items-center gap-1 text-center sm:items-end sm:text-right">
-            <p className="text-[10px] uppercase tracking-[0.22em] text-slate-500">
-              Built by Alveriano
-            </p>
-            <p className="text-[11px] text-slate-400">
-              #1 website &amp; funnel agency —{" "}
-              <Link
-                href="https://www.alveriano.com"
-                target="_blank"
-                className="underline underline-offset-2 hover:text-slate-100"
-              >
-                alveriano.com
-              </Link>
-            </p>
-          </div>
+          {/* Right: removed external credit */}
+          <div className="flex flex-col items-center gap-1 text-center sm:items-end sm:text-right" />
         </div>
       </div>
     </footer>
