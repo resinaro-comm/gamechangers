@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply antialiased bg-slate-50 text-slate-900;
+}
+
+/* Marquee animation for top banner */
+@keyframes gc-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.gc-banner-track {
+  animation: gc-marquee 22s linear infinite;
+}
+
+/* Simple container helper */
+.container {
+  @apply mx-auto w-full max-w-5xl px-4;
+}
