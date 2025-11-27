@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://gamechangers-football-coaching.vercel.app"),
+  metadataBase: new URL("https://football-gamechangers.vercel.app"),
   title: {
     default: "Football Coaching Leeds | Academy-Level 1:1 & Group",
     template: "%s | Gamechangers Football Coaching",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://gamechangers-football-coaching.vercel.app/",
+    url: "https://football-gamechangers.vercel.app/",
     title: "Football Coaching Leeds | Academy-Level 1:1 & Group",
     description:
       "Elite football coaching in Leeds. 1 to 1 and group sessions focused on technique, decision making and confidence.",
@@ -44,6 +44,11 @@ export const metadata: Metadata = {
     icon: "/gamechangers-logo.jpg",
     apple: "/gamechangers-logo.jpg",
   },
+  other: {
+    // Google Search Console verification
+    "google-site-verification":
+      "Y-7MEh5UcFLxOnr_h1JjXO98Yq4o2EjlL5rtvBY6q-M",
+  },
 };
 
 export default function RootLayout({
@@ -55,10 +60,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="min-h-screen bg-slate-950 text-slate-50 antialiased">
         {/* Global background glow */}
-        <div
-          aria-hidden
-          className="pointer-events-none fixed inset-0 -z-10"
-        >
+        <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
           <div className="absolute inset-0 bg-slate-950" />
           <div className="absolute -top-40 left-1/2 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full bg-emerald-400/5 blur-3xl" />
           <div className="absolute bottom-[-18rem] right-[-8rem] h-[28rem] w-[28rem] rounded-full bg-sky-500/5 blur-3xl" />
