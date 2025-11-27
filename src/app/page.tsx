@@ -70,7 +70,7 @@ const focusAreas = [
 const coaches = [
   {
     name: "David Lawn",
-    role: "Lead coach",
+    role: "Head Coach",
     roleTone: "emerald" as const,
     img: davidImg,
     bullets: ["Technical detail & decision making.", "Session design & standards."],
@@ -79,7 +79,7 @@ const coaches = [
   },
   {
     name: "James Lawn",
-    role: "Assistant coach",
+    role: "Head Coach",
     roleTone: "indigo" as const,
     img: jamesImg,
     bullets: ["Energy & tempo in group blocks.", "Helps turn drills into match habits."],
@@ -88,24 +88,6 @@ const coaches = [
   },
 ];
 
-const successPlayers = [
-  {
-    name: "Archie Gray",
-    tag: "Tottenham Hotspur · Leeds United · England U21",
-  },
-  {
-    name: "Jamie Shackleton",
-    tag: "Leeds United",
-  },
-  {
-    name: "Harry Leonard",
-    tag: "Blackburn Rovers",
-  },
-  {
-    name: "Will Hugill",
-    tag: "Burnley F.C.",
-  },
-];
 
 export default function HomePage() {
   const prefersReducedMotion = useReducedMotion();
@@ -618,46 +600,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Upgraded Success Stories card */}
-        <div className="space-y-4 rounded-2xl border border-slate-700/80 bg-[#020920]/95 p-5">
-          <h2 className="text-lg font-semibold text-slate-50">
-            Players we&apos;ve worked with (even briefly).
-          </h2>
-          <p className="text-sm text-slate-200">
-            Now playing at Premier League &amp; EFL clubs. This is the standard
-            we build towards — whatever level your player is at right now.
-          </p>
-
-          <div className="grid gap-3 sm:grid-cols-2">
-            {successPlayers.map((player) => (
-              <div
-                key={player.name}
-                className="rounded-xl border border-slate-700/80 bg-[#020617] px-3 py-3"
-              >
-                <p className="text-sm font-semibold text-slate-50">
-                  {player.name}
-                </p>
-                <p className="mt-2 inline-flex items-center rounded-full bg-[#020920] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.18em] text-amber-200">
-                  {player.tag}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <div className="space-y-2 text-sm text-slate-200">
-            <p className="text-xs text-slate-400">
-              Not every player ends up pro — but everyone here trains with the
-              same attention to detail and standards.
-            </p>
-            <a
-              href="https://calendly.com/footballgamechangers1/30min"
-              target="_blank"
-              className="inline-flex items-center justify-center rounded-full border border-amber-300/70 bg-[#020617] px-4 py-2 text-xs font-semibold text-slate-100 hover:bg-slate-900"
-            >
-              See if our blocks are a good fit ↗
-            </a>
-          </div>
-        </div>
       </section>
 
       {/* LATEST FROM SOCIAL – phone-style featured reel */}
