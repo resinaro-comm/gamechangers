@@ -185,7 +185,7 @@ export default function HomePage() {
             {/* Content */}
             <div className="relative z-20 px-4 pb-14 pt-16 sm:px-8 sm:pb-16 sm:pt-20 md:px-12 md:pt-24 lg:px-20 lg:pb-20">
               <motion.div
-                style={badgeY}
+                style={{ y: badgeY }}
                 initial={{ opacity: 0, y: -6 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.65, ease: EASE }}
@@ -198,7 +198,7 @@ export default function HomePage() {
               </motion.div>
 
               <motion.div
-                style={headlineY}
+                style={{ y: headlineY }}
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: EASE, delay: 0.15 }}
