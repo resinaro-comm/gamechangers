@@ -1,11 +1,8 @@
 export function GET() {
+  const base = "https://gamechangers-football-coaching.vercel.app";
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://example.com/</loc></url>
-    <url><loc>https://example.com/training</loc></url>
-    <url><loc>https://example.com/results</loc></url>
-    <url><loc>https://example.com/about</loc></url>
-    <url><loc>https://example.com/contact</loc></url>
+    <url><loc>${base}/</loc></url>
   </urlset>`;
   return new Response(xml, { headers: { "Content-Type": "application/xml" } });
 }

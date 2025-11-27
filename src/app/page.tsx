@@ -740,7 +740,7 @@ export default function HomePage() {
               addressRegion: "West Yorkshire",
               addressCountry: "GB",
             },
-            url: "https://www.gamechangers-football-site.com",
+            url: "https://gamechangers-football-coaching.vercel.app/",
             sameAs: [
               "https://www.instagram.com/football.gamechangers/",
               "https://www.tiktok.com/@footballgamechangers24",

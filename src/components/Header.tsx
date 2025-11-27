@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
@@ -68,13 +69,23 @@ export default function Header() {
         <div className="border-b border-slate-800/80 bg-slate-950/92">
           <div className="container flex h-16 items-center justify-between">
             {/* Brand */}
-            <Link href="/" className="flex items-baseline gap-2">
-              <span className="text-[11px] uppercase tracking-[0.28em] text-slate-100">
-                Gamechangers
-              </span>
-              <span className="hidden text-[11px] text-slate-400 sm:inline">
-                Football Coaching · Leeds
-              </span>
+            <Link href="/" className="flex items-center gap-2">
+              <Image
+                src="/gamechangers-logo.jpg"
+                alt="Gamechangers Football Coaching logo"
+                width={32}
+                height={32}
+                className="rounded-md border border-slate-700"
+                priority
+              />
+              <div className="flex items-baseline gap-2">
+                <span className="text-[11px] uppercase tracking-[0.28em] text-slate-100">
+                  Gamechangers
+                </span>
+                <span className="hidden text-[11px] text-slate-400 sm:inline">
+                  Football Coaching · Leeds
+                </span>
+              </div>
             </Link>
 
             {/* Desktop nav */}

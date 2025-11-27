@@ -7,12 +7,43 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://gamechangers-football-coaching.vercel.app"),
   title: {
-    default: "Gamechangers Football Coaching",
+    default: "Football Coaching Leeds | Academy-Level 1:1 & Group",
     template: "%s | Gamechangers Football Coaching",
   },
   description:
-    "1:1 and group football coaching for academy-level players in Leeds. Structured sessions, clear feedback, and a focus on results.",
+    "Gamechangers Football Coaching in Leeds: academy-level 1:1 football coaching and small-group training. Clear feedback, structured blocks, and match-realistic sessions.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://gamechangers-football-coaching.vercel.app/",
+    title: "Football Coaching Leeds | Academy-Level 1:1 & Group",
+    description:
+      "Elite football coaching in Leeds. 1 to 1 and group sessions focused on technique, decision making and confidence.",
+    siteName: "Gamechangers Football Coaching",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Gamechangers Football Coaching — academy-level sessions in Leeds",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Football Coaching Leeds | Academy-Level 1:1 & Group",
+    description:
+      "Elite football coaching in Leeds — 1:1 and small-group training that improves technique, decisions and confidence.",
+    images: ["/og-image.jpg"],
+  },
+  icons: {
+    icon: "/gamechangers-logo.jpg",
+    apple: "/gamechangers-logo.jpg",
+  },
 };
 
 export default function RootLayout({
