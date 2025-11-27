@@ -3,6 +3,8 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import LeadPopup from "@/components/LeadPopup";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: {
@@ -37,6 +39,9 @@ export default function RootLayout({
           <main className="flex-1 pb-12">{children}</main>
           <Footer />
           <LeadPopup />
+          {/* Vercel instrumentation */}
+          <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>

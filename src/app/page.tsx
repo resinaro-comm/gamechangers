@@ -710,14 +710,21 @@ export default function HomePage() {
             <div className="relative overflow-hidden rounded-[1.7rem] border border-slate-800 bg-black">
               <video
                 controls
+                playsInline
+                muted
                 preload="metadata"
+                crossOrigin="anonymous"
                 className="h-full w-full object-cover"
                 poster="/reels/shooting-technique.jpg"
+                onError={(e) => {
+                  const el = e.currentTarget;
+                  el.outerHTML = '<div class="p-4 text-center text-xs text-slate-300">Video failed to load on this device. <a href="https://www.tiktok.com/@footballgamechangers24" target="_blank" class="underline">Open on TikTok ↗</a></div>';
+                }}
               >
-                <source
-                  src="/reels/shooting-technique.mp4"
-                  type="video/mp4"
-                />
+                {/* Baseline H.264 (mobile-first) */}
+                <source src="/reels/shooting-technique-mobile.mp4" type="video/mp4" />
+                {/* Original VP9 + AAC */}
+                <source src="/reels/shooting-technique.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
