@@ -208,11 +208,11 @@ export default function HomePage() {
                 <motion.a
                   whileHover={{ scale: 1.03, y: -1 }}
                   whileTap={{ scale: 0.98, y: 0 }}
-                  href="https://calendly.com/footballgamechangers1"
+                  href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
                   target="_blank"
                   className="inline-flex items-center justify-center rounded-full bg-amber-300 px-6 py-2.5 text-sm font-medium text-slate-950 shadow-[0_18px_50px_rgba(15,23,42,0.9)] hover:bg-amber-200"
                 >
-                  Book an intro call
+                  Message on WhatsApp
                   <span aria-hidden className="ml-2 text-[13px]">↗</span>
                 </motion.a>
                 <motion.a
@@ -308,11 +308,11 @@ export default function HomePage() {
             </p>
           </div>
           <a
-            href="https://calendly.com/footballgamechangers1"
+            href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
             target="_blank"
-            className="inline-flex items-center justify-center rounded-full border border-amber-300/70 bg-slate-950 px-4 py-2 text-xs font-medium text-slate-100 hover:bg-slate-900/80"
+            className="inline-flex items-center justify-center rounded-full border border-emerald-300/70 bg-slate-950 px-4 py-2 text-xs font-medium text-emerald-200 hover:bg-slate-900/80"
           >
-            Not sure which fits? Book a call ↗
+            Not sure which fits? WhatsApp us ↗
           </a>
         </div>
 
@@ -459,6 +459,17 @@ export default function HomePage() {
                   <h3 className="mt-1 text-base font-semibold text-slate-50">
                     {coach.name}
                   </h3>
+                  {coach.name === "David Lawn" && (
+                    <a
+                      href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
+                      target="_blank"
+                      className="mt-2 inline-flex items-center justify-center gap-2 rounded-full border border-emerald-300/70 bg-black/40 px-3 py-1.5 text-xs font-medium text-emerald-200 hover:bg-black/60"
+                      aria-label="Message David on WhatsApp"
+                    >
+                      <span className="inline-block h-1 w-1 rounded-full bg-emerald-300" />
+                      Message David (WhatsApp)
+                    </a>
+                  )}
                   <ul className="mt-2 space-y-1 text-slate-200">
                     {coach.bullets.map((b) => (
                       <li key={b}>· {b}</li>
@@ -591,11 +602,11 @@ export default function HomePage() {
 
           <div className="flex justify-center md:justify-end">
             <a
-              href="https://calendly.com/footballgamechangers1/30min"
+              href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
               target="_blank"
-              className="inline-flex items-center justify-center rounded-full border border-amber-300/70 bg-[#020617] px-4 py-2 text-xs font-semibold text-slate-100 hover:bg-slate-900"
+              className="inline-flex items-center justify-center rounded-full border border-emerald-300/70 bg-[#020617] px-4 py-2 text-xs font-semibold text-emerald-200 hover:bg-slate-900"
             >
-              Ask if it&apos;s right for your player ↗
+              Ask on WhatsApp ↗
             </a>
           </div>
         </div>
@@ -713,11 +724,11 @@ export default function HomePage() {
               See more drills
             </a>
             <a
-              href="https://calendly.com/footballgamechangers1/30min"
+              href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
               target="_blank"
               className="inline-flex items-center justify-center rounded-full bg-amber-300 px-4 py-2 text-xs font-semibold text-slate-950 hover:bg-amber-200"
             >
-              Book a call after watching ↗
+              WhatsApp to book ↗
             </a>
           </div>
         </div>

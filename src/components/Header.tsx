@@ -6,7 +6,10 @@ import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import { useEffect, useState } from "react";
 
-const links = [{ href: "/", label: "Home" }];
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/insights", label: "Insights" },
+];
 
 function normalize(path: string) {
   const cleaned = path.replace(/\/+$/, "");
@@ -128,11 +131,11 @@ export default function Header() {
                 <span>TikTok</span>
               </a>
               <a
-                href="https://calendly.com/footballgamechangers1/30min"
+                href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
                 target="_blank"
                 className="rounded-full bg-amber-300 px-3 py-1.5 text-xs font-semibold text-slate-950 shadow-[0_10px_30px_rgba(15,23,42,0.9)] hover:bg-amber-200"
               >
-                Book a call
+                Message on WhatsApp
               </a>
             </div>
 
@@ -223,11 +226,11 @@ export default function Header() {
                   <span>TikTok</span>
                 </a>
                 <a
-                  href="https://calendly.com/footballgamechangers1/30min"
+                  href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
                   target="_blank"
                   className="w-full rounded-xl bg-gradient-to-r from-amber-300 to-amber-200 px-4 py-3 text-xs font-semibold text-slate-950 shadow-[0_10px_30px_rgba(15,23,42,0.6)] hover:from-amber-200 hover:to-amber-100 text-center"
                 >
-                  Book a call
+                  Message on WhatsApp
                 </a>
               </div>
             </nav>

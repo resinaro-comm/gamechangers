@@ -79,11 +79,11 @@ export default function Footer() {
                 TikTok
               </Link>
               <Link
-                href="https://calendly.com/footballgamechangers1/30min"
+                href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
                 target="_blank"
-                className="rounded-full border border-slate-700 px-3 py-1 hover:border-slate-400 hover:text-slate-100"
+                className="rounded-full border border-emerald-300/70 px-3 py-1 text-emerald-200 hover:border-emerald-200 hover:text-emerald-100"
               >
-                Book a call
+                Message on WhatsApp
               </Link>
             </div>
           </div>
@@ -101,6 +101,15 @@ export default function Footer() {
                 className="underline underline-offset-2 hover:text-slate-100"
               >
                 alveriano.com
+              </Link>
+            </p>
+            <p className="text-[11px] text-slate-400">
+              Contact on WhatsApp: {" "}
+              <Link
+                href="https://wa.me/447727668884?text=Hi%20David%2C%20just%20contacting%20you%20about%20football%20coaching.%20My%20name%20is%20"
+                target="_blank"
+                className="underline underline-offset-2 hover:text-slate-100"
+              >
               </Link>
             </p>
           </div>
